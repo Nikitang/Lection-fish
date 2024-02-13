@@ -2,8 +2,8 @@
 const fishing =  {
     fishing: [
         {
-        number: 1,
-        date: 2021,
+        number: '1',
+        date: '2021',
         location: 'river',
         weather: '+22',
         weight: '5kg',
@@ -11,8 +11,8 @@ const fishing =  {
         },
     
         {
-        number: 2,
-        date: 2023,
+        number: '2',
+        date: '2023',
         location: 'river',
         weather: '+22',
         weight: '5kg',
@@ -20,8 +20,8 @@ const fishing =  {
         }, 
     
         {
-        number: 3,
-        date: 2024,
+        number: '3',
+        date: '2024',
         location: 'river',
         weather: '+22',
         weight: '5kg',

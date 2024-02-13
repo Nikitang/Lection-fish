@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { addNewFishing, getFishName, renameFish } from "../functions.js"
+import { addNewFishing, renameFish, getFishName } from "../functions.js"
 import readlineSync from 'readline-sync';
 const object = { fishing: [] };
 function myFishing() {
@@ -20,4 +20,19 @@ function myFishing() {
 myFishing();
 myFishing();
 
+function reName() {
+    const rename = readlineSync.question('You want rename fish?(yes/no): ');
+    if (rename === 'yes') {
+        const read = readlineSync.question('Read number fishing: ');
+        const read2 = readlineSync.question('New name fish: ');
+        renameFish(object, read, read2);
+    }
+    const want = readlineSync.question('You want check list?(yes/no) ');
+    if (want === 'yes') {
+        console.log(object);
+    }
+    return;
+};
+
+reName();
 
